@@ -1,6 +1,6 @@
 {
-  "name": "fr.ynov.singard.project_ruin",
-  "displayName": "project_ruin",
+  "name": "com.ruin",
+  "displayName": "ruin",
   "version": "1.0.0",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
@@ -14,16 +14,15 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "cordova-android": "^8.1.0",
-    "cordova-browser": "^6.0.0",
     "cordova-ios": "^6.2.0",
     "cordova-plugin-screen-orientation": "^3.0.2",
-    "es6-promise-plugin": "^4.2.2"
+    "cordova-plugin-splashscreen": "^6.0.0",
+    "es6-promise-plugin": "^4.2.2",
+    "iod": "^1.1.1"
   },
   "cordova": {
     "platforms": [
-      "android",
-      "ios",
-      "browser"
+      "ios"
     ],
     "plugins": {
       "cordova-plugin-screen-orientation": {}
