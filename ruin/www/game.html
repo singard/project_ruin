@@ -20,23 +20,61 @@
             }
             #introText{
                 
-
+                background-color: silver;
     box-shadow: 6px 6px 10px black;
     border: 3px blue ridge;
     border-radius: 10px;
 
             }
             </style> 
+
+            <script>
+window.addEventListener('load', function () {
+  console.log('Cette fonction est exécutée une fois quand la page est chargée.');
+});
+</script>
+
         <title>Hello World</title>
     </head>
     <body>
+        <script>
+            window.addEventListener('load', function () {
+              console.log('Cette fonction est exécutée une fois quand la page est chargée.');
+            });
+
+            var my_media = new Media("song/EtrianOdyssey_FestivalOfWorship.mp3", onSuccess, onError);
+function onError(){
+    console.log("error song not load");
+}
+function onSuccess(){
+    my_media.start();
+}
+// Record audio
+my_media.play();
+my_media.setVolume(50);
+
+mediaTimer = setInterval(function () {
+    // get media amplitude
+    my_media.getCurrentAmplitude(
+        // success callback
+        function (amp) {
+            console.log(amp + "%");
+        },
+        // error callback
+        function (e) {
+            console.log("Error getting amp=" + e);
+        }
+    );
+}, 1000);
+            </script>
+            
         <div class="container">
            
                   <h1>project ruin</h1>
 
                   <div class="row align-items-end">
                     <div class="col align-items-end">
-                        <img src="img/fistPerso.png" class="img" id="introImg">
+                        <img src="img/king.png" class="img" id="introImg">
                     </div>
                     <div class="col align-items-end" id="introText">
                         <p class="h4">Bienvenue sur les terre de Kaldar chère aventurière !</p>
