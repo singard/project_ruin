@@ -42,30 +42,19 @@ window.addEventListener('load', function () {
               console.log('Cette fonction est exécutée une fois quand la page est chargée.');
             });
 
-            var my_media = new Media("song/EtrianOdyssey_FestivalOfWorship.mp3", onSuccess, onError);
+            var my_media = new Media("/android_asset/www/song/EtrianOdyssey_FestivalOfWorship.mp3", onSuccess, onError);
 function onError(){
     console.log("error song not load");
 }
 function onSuccess(){
-    my_media.start();
+   // Record audio
+my_media.play();
 }
 // Record audio
 my_media.play();
 my_media.setVolume(50);
 
-mediaTimer = setInterval(function () {
-    // get media amplitude
-    my_media.getCurrentAmplitude(
-        // success callback
-        function (amp) {
-            console.log(amp + "%");
-        },
-        // error callback
-        function (e) {
-            console.log("Error getting amp=" + e);
-        }
-    );
-}, 1000);
+
             </script>
             
         <div class="container">

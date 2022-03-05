@@ -19,6 +19,23 @@
                
             }
             </style> 
+            <script>
+               screen.orientation.lock('landscape');
+               var my_media = new Media("/android_asset/www/song/EtrianOdyssey_FestivalOfWorship.mp3", onSuccess, onError);
+function onError(){
+    console.log("error song not load");
+}
+function onSuccess(){
+   // Record audio
+my_media.play();
+}
+// Record audio
+my_media.play();
+my_media.setVolume(50);
+
+
+            </script>
+            </script>
         <title>Hello World</title>
     </head>
     <body>
