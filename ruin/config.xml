@@ -8,6 +8,52 @@
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
-    
+
+<splash src="www/img/logo.jpg" />
+ <icon src="www/img/logo.jpg" />
  <preference name="SplashScreenDelay" value="4000" />
+
+  <platform name="ios">
+        <!-- iOS 8.0+ -->
+        <!-- iPhone 6 Plus  -->
+        <icon src="www/img/logo.jpg" width="180" height="180" />
+        <!-- iOS 7.0+ -->
+        <!-- iPhone / iPod Touch  -->
+        <icon src="www/img/logo.jpg" width="60" height="60" />
+        <icon src="www/img/logo.jpg" width="120" height="120" />
+        <!-- iPad -->
+        <icon src="www/img/logo.jpg" width="76" height="76" />
+        <icon src="www/img/logo.jpg" width="152" height="152" />
+        <!-- Spotlight Icon -->
+        <icon src="www/img/logo.jpg" width="40" height="40" />
+        <icon src="www/img/logo.jpg" width="80" height="80" />
+        <!-- iOS 6.1 -->
+        <!-- iPhone / iPod Touch -->
+        <icon src="www/img/logo.jpg" width="57" height="57" />
+        <icon src="www/img/logo.jpg" width="114" height="114" />
+        <!-- iPad -->
+        <icon src="www/img/logo.jpg" width="72" height="72" />
+        <icon src="www/img/logo.jpg" width="144" height="144" />
+        <!-- iPad Pro -->
+        <icon src="www/img/logo.jpg" width="167" height="167" />
+        <!-- iPhone Spotlight and Settings Icon -->
+        <icon src="www/img/logo.jpg" width="29" height="29" />
+        <icon src="www/img/logo.jpg" width="58" height="58" />
+        <icon src="www/img/logo.jpg" width="87" height="87" />
+        <!-- iPad Spotlight and Settings Icon -->
+        <icon src="www/img/logo.jpg" width="50" height="50" />
+        <icon src="www/img/logo.jpg" width="100" height="100" />
+        <!-- iTunes Marketing Image -->
+        <icon src="www/img/logo.jpg" width="1024" height="1024" />
+    </platform>
+    <platform name="android">
+
+  <icon background="#000000" density="ldpi" foreground="www/img/logo.jpg" />
+  <icon background="#000000" density="mdpi" foreground="www/img/logo.jpg" />
+  <icon background="#000000" density="hdpi" foreground="www/img/logo.jpg" />
+  <icon background="#000000" density="xhdpi" foreground="www/img/logo.jpg" />
+  <icon background="#000000" density="xxhdpi" foreground="www/img/logo.jpg" />
+  <icon background="#000000" density="xxxhdpi" foreground="www/img/logo.jpg" />
+</platform>
+
 </widget>
